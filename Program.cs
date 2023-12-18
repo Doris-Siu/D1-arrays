@@ -46,6 +46,18 @@ foreach (int i in temp)
 
 Console.WriteLine();
 
+// sorting array - for large data
+int[] grades = { 30, 430, 23, 10 };
+
+Array.Sort(grades);
+
+foreach (var grade in grades)
+{
+    Console.Write(grade + " ");
+}
+
+
+Console.WriteLine();
 //Find Highest Value in Array
 int n, highest;
 int[] arr = new int[25];
