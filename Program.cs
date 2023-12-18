@@ -25,3 +25,21 @@ for (int i = 0; i < jaggedArr.Length; i++)
     }
 }
 
+Console.WriteLine();
+
+// reversing array
+int[] list = { 29, 15, 30, 98 };
+int[] temp = list;
+Console.Write("Original Array: ");
+foreach (int i in list)
+{
+    Console.Write(i + " ");
+}
+Console.WriteLine();
+
+Array.Reverse(temp);
+Console.Write("Reversed Array: ");
+foreach (int i in temp)
+{
+    Console.Write(i + " ");
+}
