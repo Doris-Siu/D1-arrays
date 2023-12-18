@@ -43,3 +43,30 @@ foreach (int i in temp)
 {
     Console.Write(i + " ");
 }
+
+Console.WriteLine();
+
+//Find Highest Value in Array
+int n, highest;
+int[] arr = new int[25];
+
+Console.WriteLine("Enter the number: ");
+n = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter the array elements: ");
+for (int i = 0; i < n; i++)
+{
+    arr[i] = int.Parse(Console.ReadLine());
+}
+
+highest = arr[0];
+foreach (var number in arr)
+{
+if (number >highest)
+    {
+        highest = number;
+    }
+}
+
+Console.WriteLine("The highest number in the array: " + highest);
+
